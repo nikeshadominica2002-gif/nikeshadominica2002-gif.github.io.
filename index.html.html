@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Археология памяти — Юлия Дружинина</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@300;400&display=swap"
+ rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">
+        <span>АРХЕОЛОГИЯ ПАМЯТИ</span>
+        <small>Юлия Дружинина · художник</small>
+    </a>
+    <nav>
+        <a href="#about">ОБ АВТОРЕ</a>
+        <a href="#works">РАБОТЫ</a>
+        <a href="#method">МЕТОД</a>
+        <a href="#interior">ИНТЕРЬЕР</a>
+        <a href="#contacts">КОНТАКТЫ</a>
+    </nav>
+    <a href="#works" class="menu">☰</a>
+</header>
+<section class="hero" id="method">
+    <div class="hero-content">
+        <h1>АРХЕОЛОГИЯ<br>ПАМЯТИ</h1>
+        <p class="subtitle">Юлия Дружинина · художник</p>
+        <div class="line"></div>
+        <p class="quote">У каждой вещи есть своя история.</p>
+        <p class="description">
+            Я создаю скульптуры из найденного дерева<br>
+            и ассамбляжи из фрагментов прошлого.<br>
+            Исследую память, несовершенство<br>
+            и то, что помогает нам оставаться собой.
+        </p>
+        <a href="#works" class="button">Смотреть работы →</a>
+    </div>
+</section>
+<section class="about" id="about">
+    <img src="polnrost.jpeg" alt="Юлия Дружинина">
+    <div class="about-text">
+        <small>01 / ОБ АВТОРЕ</small>
+        <h2>Я Юлия Дружинина</h2>
+        <h3>По образованию я экономист,<br>
+        по призванию — художник.</h3>
+        <p>
+            С 2012 года моя жизнь тесно связана с творчеством.
+            За это время я работала с текстильной куклой,
+            живописью, фотографией, деревом, создавала рамы
+            и предметы интерьера из старых материалов.
+        </p>
+        <p>
+            Сегодня я создаю скульптуры из найденного дерева
+            и ассамбляжи из фрагментов старых интерьеров.
+            Меня интересует момент, когда материал, который,
+            кажется, уже завершил свою историю, неожиданно
+            обретает новую.
+        </p>
+        <a href="#contacts" class="more">Подробнее обо мне →</a>
+    </div>
+    <div class="about-quote">
+        <p>
+            Мне близка мысль,<br>
+            что не всё нужно<br>
+            исправлять, чтобы<br>
+            сделать прекрасным.
+        </p>
+        <p>
+            Иногда важно<br>
+            сохранить следы<br>
+            времени, принять<br>
+            неровности и позволить<br>
+            вещи быть собой.
+        </p>
+        <div class="line"></div>
+    </div>
+</section>
+<section class="gallery" id="works">
+    <div class="gallery-heading">
+        <div>
+            <small>02 / ГАЛЕРЕЯ</small>
+            <h2>Избранные работы</h2>
+        </div>
+        <a href="#works-list">Все работы →</a>
+    </div>
+    <div class="works" id="works-list">
+        <article class="work">
+            <a href="images/work1.jpg" target="_blank">
+                <img src="hpp2.JPG" alt="Принятие">
+            </a>
+            <h3>Принятие</h3>
+            <p>Найденное дерево · 33 × 15 см</p>
+            <span>23 500 ₽</span>
+        </article>
+        <article class="work">
+            <a href="images/work2.jpg" target="_blank">
+                <img src="put3.jpeg" alt="Гамаюн">
+            </a>
+            <h3>Гамаюн</h3>
+            <p>Найденное дерево · 23 × 6 см</p>
+            <span>8 000 ₽</span>
+        </article>
+        <article class="work">
+            <a href="images/work3.jpg" target="_blank">
+                <img src="hphp4.jpeg" alt="Путь">
+            </a>
+            <h3>Путь</h3>
+            <p>Найденное дерево · 45 × 13 см</p>
+            <span>23 500 ₽</span>
+        </article>
+        <article class="work">
+            <a href="images/work4.jpg" target="_blank">
+               <img src="phhh5.jpeg" alt="Внутри">
+            </a>
+            <h3>Внутри</h3>
+            <p>Найденное дерево · 36 × 10 см</p>
+            <span>23 500 ₽</span>
+        </article>
+    </div>
+</section>
+<section class="contact-banner" id="contacts">
+    <div>
+        <h2>Если работа откликнулась, напишите мне</h2>
+        <p>Я расскажу подробнее о произведении, его материалах и условиях приобретения.</p>
+    </div>
+    <a href="https://t.me/"
+ class="button">Связаться →</a>
+</section>
+<footer id="interior">
+    <div>Instagram · Telegram · Email</div>
+    <p>Археология памяти · Юлия Дружинина · Авторское искусство</p>
+</footer>
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">
+        &times;
+    </button>
+    <img id="lightboxImage" src="" alt="">
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeButton = document.getElementById('lightboxClose');
+    if (!lightbox || !lightboxImage || !closeButton) return;
+    // Находим все изображения на сайте
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('click', event => {
+            // Не открываем маленькие декоративные картинки
+            if (img.width < 80 || img.height < 80) return;
+            event.preventDefault();
+            lightboxImage.src = img.currentSrc || img.src;
+            lightboxImage.alt = img.alt || '';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        lightboxImage.src = '';
+    }
+    closeButton.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', event => {
+        if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') closeLightbox();
+    });
+});
+</script>
+</body>
+</html>
